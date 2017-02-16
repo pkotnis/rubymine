@@ -1,0 +1,84 @@
+<templateSet group="Ruby RSpec">
+  <template name="desc" value="describe '$SYSTEM_UNDER_TEST$' do&#10;  $CURSOR$&#10;end" description="desc" toReformat="true" toShortenFQNames="true">
+    <variable name="SYSTEM_UNDER_TEST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="itt" value="it '$DO_SOME_COOL_STUFF$' do&#10;  $ADD_SOME_COOL_CODE$&#10;end" description="it (with block)" toReformat="true" toShortenFQNames="true">
+    <variable name="DO_SOME_COOL_STUFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ADD_SOME_COOL_CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="con" value="context '$CONTEXT$' do&#10;  $CURSOR$  &#10;end" description="context" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="it" value="it { $CURSOR$ }" description="it (inline)" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ise" value="is_expected.to $CURSOR$" description="is_expected" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="ex" value="expect($WHAT$).to $CURSOR$" description="expect" toReformat="false" toShortenFQNames="true">
+    <variable name="WHAT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="let" value="let(:$SYMBOL$) { $CURSOR$ }" description="let" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="facc" value="FactoryGirl.create(:$NAME$)" description="FactoryGirl.create" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="facb" value="FactoryGirl.build(:$NAME$)" description="FactoryGirl.build" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="let!" value="let!(:$SYMBOL$) { $CURSOR$ }" description="let!" toReformat="false" toShortenFQNames="true">
+    <variable name="SYMBOL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="bef" value="before { $CURSOR$ }" description="before (inline)" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="beff" value="before do&#10;  $CURSOR$&#10;end" description="before (with block)" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="sub" value="subject { $CURSOR$ }" description="subject" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>
