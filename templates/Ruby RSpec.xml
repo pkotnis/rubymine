@@ -2,7 +2,9 @@
   <template name="desc" value="describe '$SYSTEM_UNDER_TEST$' do&#10;  $CURSOR$&#10;end" description="desc" toReformat="true" toShortenFQNames="true">
     <variable name="SYSTEM_UNDER_TEST" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
   </template>
   <template name="itt" value="it '$DO_SOME_COOL_STUFF$' do&#10;  $ADD_SOME_COOL_CODE$&#10;end" description="it (with block)" toReformat="true" toShortenFQNames="true">
     <variable name="DO_SOME_COOL_STUFF" expression="" defaultValue="" alwaysStopAt="true" />
@@ -20,7 +22,9 @@
   </template>
   <template name="it" value="it { $CURSOR$ }" description="it (inline)" toReformat="false" toShortenFQNames="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
   </template>
   <template name="ise" value="is_expected.to $CURSOR$" description="is_expected" toReformat="false" toShortenFQNames="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
@@ -95,6 +99,18 @@
   </template>
   <template name="modspec" value="require 'rails_helper'&#10;&#10;RSpec.describe $CLASS$ type: :model do&#10;  $CURSOR$&#10;end&#10;" description="Creates a Model Spec" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="aft" value="after { $CURSOR$ }" description="after" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="aftt" value="after do&#10;  $CURSOR$&#10;end" description="after with block" toReformat="false" toShortenFQNames="true">
     <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="RUBY" value="true" />
