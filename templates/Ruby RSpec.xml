@@ -112,4 +112,16 @@
       <option name="RUBY" value="true" />
     </context>
   </template>
+  <template name="aft" value="after { $CURSOR$ }" description="after" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+  <template name="aftt" value="after do&#10;  $CURSOR$&#10;end" description="after with block" toReformat="false" toShortenFQNames="true">
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
 </templateSet>

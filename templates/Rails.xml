@@ -1,0 +1,7 @@
+<templateSet group="Rails">
+  <template name="rev" value="reversible do |dir|&#10;  dir.up do&#10;    execute &lt;&lt;-SQL&#10;      &#10;    SQL&#10;  end&#10;&#10;  dir.down do&#10;    execute &lt;&lt;-SQL&#10;      &#10;    SQL&#10;  end&#10;end" description="reversible migration" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>
