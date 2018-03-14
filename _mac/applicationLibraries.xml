@@ -1320,6 +1320,16 @@
         <root url="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/templates" />
       </SOURCES>
     </library>
+    <library name="bootstrap-select-rails (v1.12.4, rbenv: 2.3.3) [gem]">
+      <CLASSES>
+        <root url="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-select-rails-1.12.4/lib" />
+        <root url="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-select-rails-1.12.4/vendor" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-select-rails-1.12.4/lib" />
+        <root url="file://$USER_HOME$/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/bootstrap-select-rails-1.12.4/vendor" />
+      </SOURCES>
+    </library>
     <library name="bootstrap-slider-rails (v9.2.0, rbenv: 2.3.0) [gem]">
       <CLASSES>
         <root url="file://$USER_HOME$/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-slider-rails-9.2.0/lib" />
