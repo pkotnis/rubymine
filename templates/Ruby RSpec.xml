@@ -55,13 +55,13 @@
       <option name="RUBY" value="true" />
     </context>
   </template>
-  <template name="facc" value="FactoryGirl.create(:$NAME$)" description="FactoryGirl.create" toReformat="false" toShortenFQNames="true">
+  <template name="facc" value="FactoryBot.create(:$NAME$)" description="FactoryGirl.create" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="RUBY" value="true" />
     </context>
   </template>
-  <template name="facb" value="FactoryGirl.build(:$NAME$)" description="FactoryGirl.build" toReformat="false" toShortenFQNames="true">
+  <template name="facb" value="FactoryBot.build(:$NAME$)" description="FactoryGirl.build" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="RUBY" value="true" />
